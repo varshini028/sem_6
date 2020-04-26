@@ -11,15 +11,15 @@ public class BookService
 	
 	
 	BookIterator iterroli;
-	BookIterator iterb;
+	BookIterator itersrishti;
 	BookIterator iterc;
 	
 
-	public BookService(BookIterator newiterroli, BookIterator newiterb, BookIterator newiterc) 
+	public BookService(BookIterator newiterroli, BookIterator newitersrishti, BookIterator newiterc) 
 	{
 		
 		iterroli = newiterroli;
-		iterb = newiterb;
+		itersrishti = newitersrishti;
 		iterc = newiterc;
 		
 	}
@@ -29,16 +29,16 @@ public class BookService
 		
 		
 		Iterator roli = iterroli.createIterator();
-		Iterator b = iterb.createIterator();
+		Iterator srishti = itersrishti.createIterator();
 		Iterator c = iterc.createIterator();
 		
 		System.out.println("books of the Roli_publishers\n");
 		printTheBooks(roli);
 		
-		System.out.println("books of the b_publishers\n");
-		printTheBooks(b);
+		System.out.println("books of the Srishti_publishers\n");
+		printTheBooks(srishti);
 		
-		System.out.println("books of the b_publishers\n");
+		System.out.println("books of the c_publishers\n");
 		printTheBooks(c);
 		
 	}
